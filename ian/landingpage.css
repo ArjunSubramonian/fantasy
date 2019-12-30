@@ -1,0 +1,217 @@
+#landing {
+    background-image: url("./bg.jpeg");
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    min-height: 700px
+}
+
+#sloth {
+    position: absolute;
+    width: 8%;
+    right: calc((100% - 156px) * .1);
+    bottom: 11%
+}
+
+#heartBubble {
+    width: 30%
+}
+
+#doves {
+    position: absolute;
+    top: 30%;
+    width: 30%
+}
+
+div#center {
+    position: absolute;
+    width: 900px;
+    height: 300px;
+    top: calc(3% + 60px);
+    left: 50vw;
+    transform: translateX(-50%)
+}
+
+img#cloudGroup {
+    width: 100%;
+    position: absolute;
+    left: 3%;
+    top: 0;
+    opacity: .4;
+    display: none
+}
+
+#clouds {
+    width: 100%
+}
+
+.clouds {
+    position: absolute;
+    animation: harmonic 8s infinite;
+    animation-timing-function: linear
+}
+
+img#cloud4 {
+    width: 57%;
+    left: 3%;
+    top: 8%;
+    animation-delay: 3s
+}
+
+img#cloud3 {
+    width: 84%;
+    left: 18%;
+    top: 6%;
+    animation-delay: 1s;
+    z-index: -1
+}
+
+img#cloud2 {
+    width: 72%;
+    left: 15%;
+    top: 16%;
+    animation-delay: 2s
+}
+
+img#cloud1 {
+    width: 70%;
+    left: 15%;
+    top: 0
+}
+
+div.flock {
+    position: relative;
+    top: 40%;
+    animation: swim 30s infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards
+}
+
+.bird {
+    animation: bounce 2s infinite;
+    animation-timing-function: linear;
+    width: 5%;
+    left: 11%;
+}
+
+#left {
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0
+}
+
+img#leftTree {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0
+}
+
+img#sun {
+    width: 40%;
+    position: absolute;
+    bottom: 80%;
+    right: 10%
+}
+
+img#koala {
+    width: 15%;
+    position: absolute;
+    left: 15%;
+    bottom: 20%
+}
+
+#right {
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    overflow-x: hidden;
+    overflow: hidden
+}
+
+img#rightTree {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: -15%
+}
+
+img#couple {
+    width: 15%;
+    bottom: 0;
+    position: absolute;
+    left: 40%;
+}
+
+img#goat {
+    width: 10%;
+    bottom: 0;
+    left: 30%;
+    position: absolute;
+}
+
+@keyframes harmonic {
+    0%,
+    100% {
+        transform: translateX(0)
+    }
+    25% {
+        transform: translateX(-3%)
+    }
+    75% {
+        transform: translateX(3%)
+    }
+}
+
+@keyframes bounce {
+    0%,
+    50%,
+    100% {
+        transform: translateY(0)
+    }
+    25% {
+        transform: translateY(-5px)
+    }
+    75% {
+        transform: translateY(-3px)
+    }
+}
+
+@keyframes swim {
+    from {
+        transform: translateX(200vw) scaleX(-1)
+    }
+    to {
+        transform: translateX(-200vw) scaleX(-1)
+    }
+}
+
+html,
+body {
+    margin: 0;
+    text-align: center;
+    font-family: nexalight;
+    color: #7498bc;
+    font-weight: 400;
+    min-width: 250px;
+    font-size: 1.4vw;
+    overflow-x: hidden;
+    width: 100vw
+}
+
+.bounce {
+    animation: bounce 2s infinite;
+    animation-timing-function: linear
+}
+
+.bounce:nth-of-type(4) {
+    animation-delay: 1s
+}
+

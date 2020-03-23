@@ -16,6 +16,13 @@
     bottom: 11%
 }
 
+#gecko {
+    position: absolute;
+    width: 6%;
+    right: 20%;
+    bottom: 50%
+}
+
 #heartBubble {
     width: 30%
 }
